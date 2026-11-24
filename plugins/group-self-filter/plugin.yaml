@@ -1,0 +1,8 @@
+name: group-self-filter
+version: 1.0.0
+description: "Drop group/channel messages sent by the owner's own ad accounts (userbot) so the bot never answers its own ads. DMs untouched."
+author: "hermesvpn session"
+provides_hooks:
+  - pre_gateway_dispatch
+  - transform_llm_output
+  - pre_tool_call

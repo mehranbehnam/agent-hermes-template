@@ -1,0 +1,5 @@
+# Agent-Hermes: HermesVPN ads in FREE open Iranian ad groups (owner request 2026-11-17). Status: free_ads.py status
+# run: judge (leave groups that deleted our hello/ad or muted us) then post to 2 groups; ~1 ad/group/day, 09:20-23:20 Tehran.
+50 5-19 * * * root flock -n /run/free_ads.lock /usr/bin/python3 /root/.hermes/ads/scripts/free_ads.py run >> /root/.hermes/ads/stats/free_ads.log 2>&1
+# join: up to 8 not-yet-joined candidates (hello probe), twice a day; does nothing once all are joined/dropped.
+20 6,14 * * * root flock -n /run/free_ads.lock /usr/bin/python3 /root/.hermes/ads/scripts/free_ads.py join >> /root/.hermes/ads/stats/free_ads.log 2>&1

@@ -1,0 +1,5 @@
+# Agent-Hermes: Agent Hermes ads (owner via HermesVPN 2026-11-12). Plain script, no LLM. Separate rotation per chat.
+# @example_ad_group every 2 h at :30 UTC on even hours; @your_channel every 6 h at 04:30/10:30/16:30/22:30 UTC.
+# ENABLED 2026-11-12 by the owner (direct: «تبلیغ Agent Hermes رو روشن کن") after approving the 4 previews.
+# STOPPED 2026-11-18 (owner left @example_ad_group) 30 0-22/2 * * * root flock -n /run/agent_hermes_ads.lock /usr/bin/python3 /root/.hermes/ads/scripts/agent_hermes_ads.py example_ad_group >> /root/.hermes/ads/stats/agent_hermes_ads.log 2>&1
+30 4,10,16,22 * * * root sleep 90; flock -n /run/agent_hermes_ads.lock /usr/bin/python3 /root/.hermes/ads/scripts/agent_hermes_ads.py your_channel >> /root/.hermes/ads/stats/agent_hermes_ads.log 2>&1

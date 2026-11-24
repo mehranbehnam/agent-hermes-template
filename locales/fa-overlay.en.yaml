@@ -1,0 +1,56 @@
+# Persian overlay for user-facing gateway strings (agenthermes 2026-11-14). Layer 2 of agent/i18n.py; missing keys fall back to bundled en.
+gateway:
+  busy:
+    steered_subagents_head: "⏩ پیامت به کار در حال انجام اضافه شد"
+    steered_subagents_tail: "؛ بعد از قدم بعدی به آن می‌رسم."
+    steered_head: "⏩ پیامت به کار در حال انجام اضافه شد"
+    steered_tail: "؛ بعد از قدم بعدی به آن می‌رسم."
+    redirected_head: "↪ مسیر کار عوض شد"
+    redirected_tail: "؛ طبق اصلاحت ادامه می‌دهم."
+    subagent_working_head: "⏳ هنوز روی کار قبلی هستم"
+    compressing_head: "⏳ در حال مرتب کردن گفتگو"
+    queued_head: "⏳ پیامت در صف است"
+    queued_tail: "؛ کار فعلی که تمام شد جوابت را می‌دهم."
+    interrupting_head: "⚡ کار فعلی را متوقف می‌کنم"
+    interrupting_tail: "؛ الان به پیامت جواب می‌دهم."
+    another_turn_running: "⏳ هنوز در حال جواب دادن به پیام قبلی هستم؛ این پیام پردازش نشد. چند لحظه بعد دوباره بفرست."
+    draining_maintenance: "⏳ ایجنت چند لحظه برای نگهداری در دسترس نیست؛ کمی بعد دوباره بفرست."
+  exec_approval:
+    header: "⚠️ ایجنت برای اجرای یک دستور اجازه می‌خواهد"
+    reason_label: "دلیل"
+    default_reason: "دستور حساس"
+    timed_out_notice: "⌛ جوابی نیامد ({window})؛ دستور اجرا نشد. اگر هنوز لازم است دوباره بگو."
+    deadline: "اگر تا {window} جواب ندهی، اجرا نمی‌شود."
+platform:
+  telegram:
+    approval:
+      action_once: "✅ فقط این بار"
+      action_session: "✅ تا آخر این گفتگو"
+      action_always: "✅ همیشه"
+      action_deny: "❌ اجازه نده"
+      toast_already_resolved: "این درخواست قبلاً جواب داده شده."
+      resolved_once: "✅ یک بار اجازه داده شد"
+      resolved_session: "✅ برای این گفتگو اجازه داده شد"
+      resolved_always: "✅ برای همیشه اجازه داده شد"
+      resolved_deny: "❌ رد شد"
+# Persian turn-completion explanations (owner 2026-11-19: no English system text for users).
+explainer:
+  no_reply_prefix: "⚠️ جوابی آماده نشد: "
+  empty_response: "مدل این بار جوابی نداد. «ادامه بده» را بفرست تا دوباره امتحان کنم."
+  exit:
+    all_retries_exhausted_no_response: "سرویس هوش مصنوعی بعد از چند بار تلاش جواب نداد. چند لحظه بعد دوباره بفرست."
+    partial_stream_recovery: "جواب نیمه‌کاره قطع شد. «ادامه بده» را بفرست تا از همان‌جا ادامه دهم."
+    fallback_prior_turn_content: "این بار چیز تازه‌ای ساخته نشد. «ادامه بده» را بفرست."
+    redirect_restart_limit_exceeded: "پیام‌های اصلاحی پشت سر هم کار را متوقف کرد؛ آخرین پیامت در صف است."
+    rebuilt_restart_limit_exceeded: "سرویس‌های هوش مصنوعی پشت سر هم خطا دادند. کمی بعد «ادامه بده» را بفرست."
+    budget_exhausted: "سقف کار این نوبت پر شد. «ادامه بده» را بفرست تا ادامه دهم."
+    ollama_runtime_context_too_small: "حافظه‌ی مدل برای این کار کم بود."
+    pending_tool_result: "کار طولانی بود و نتیجه‌اش هنوز جمع‌بندی نشده. «ادامه بده» را بفرست تا نتیجه را بگویم."
+    interrupted_during_api_call: "ارتباط وسط کار قطع شد. «ادامه بده» را بفرست."
+    max_iterations_reached: "تعداد مراحل این کار به سقف رسید. «ادامه بده» را بفرست تا ادامه دهم."
+    error_near_max_iterations: "نزدیک آخر کار خطایی پیش آمد. «ادامه بده» را بفرست."
+    repeated_outer_errors: "کار چند بار پشت سر هم خطا داد و متوقف شد. کمی بعد «ادامه بده» را بفرست."
+  file_mutation:
+    header: "⚠️ {count} تغییر فایل در این نوبت انجام نشد."
+  shared:
+    the_model: "مدل"

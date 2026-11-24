@@ -1,0 +1,2 @@
+# Agent-Hermes «پایشگر لحظه‌ای»: every 5 min check channel/group events and DM Owner (owner asked to run it, 2026-10-24). Acts only when live_monitor.py on.
+*/5 * * * * root /usr/bin/python3 /root/.hermes/ads/scripts/live_monitor.py tick >> /root/.hermes/ads/stats/live_monitor.log 2>&1

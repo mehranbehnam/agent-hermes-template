@@ -1,0 +1,2 @@
+# Agent-Hermes: hourly snapshot of HermesVPN channel/group stats for chan_stats.py report (owner approved 2026-10-24).
+7 * * * * root /usr/bin/python3 /root/.hermes/ads/scripts/chan_stats.py collect >> /root/.hermes/ads/stats/collect.log 2>&1

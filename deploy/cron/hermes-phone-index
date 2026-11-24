@@ -1,0 +1,3 @@
+# Agent-Hermes: OCR index of the owner's phone uploads (/home/owner-phone/upload), owner request 2026-11-19.
+# Status: /usr/bin/python3 /root/.hermes/shared-tools/docs/phone_index.py status
+*/10 * * * * root flock -n /run/phone_index.lock nice -n 15 /usr/bin/python3 /root/.hermes/shared-tools/docs/phone_index.py index >> /root/.hermes/logs/phone_index.log 2>&1

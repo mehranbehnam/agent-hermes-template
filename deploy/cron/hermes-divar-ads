@@ -1,0 +1,3 @@
+# Agent-Hermes: HermesVPN ads in @example_ad_group, 1 per hour (owner 2026-11-08). Plain script, no LLM/Hermes gateway.
+# Replaces Hermes job 092fe0366182 (paused). Only ONE sender may be active. Stop: comment this line out.
+# STOPPED 2026-11-18 (owner left @example_ad_group) 0 * * * * root flock -n /run/divar_ads.lock /usr/bin/python3 /root/.hermes/ads/scripts/divar_ads.py >> /root/.hermes/ads/stats/divar_ads.log 2>&1

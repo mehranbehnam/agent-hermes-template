@@ -1,0 +1,32 @@
+# secrets — never commit
+.env
+*.env
+!.env.example
+*.session
+*.session-journal
+*.creds.json
+rclone.conf
+id_*
+*.pem
+*.key
+# runtime data — user/customer data stays on the server only
+*.db
+*.db-*
+*.sqlite
+*.log
+logs/
+backups/
+sessions/
+state/
+tiers.json
+trials.json
+roster.json
+labels.json
+perms.json
+panel_state.json
+ledger/
+archive-admin/
+phone-index/
+upload/
+__pycache__/
+venv/

@@ -1,0 +1,2 @@
+# Agent-Hermes: subscription reminders (2 days before / at expiry) for basic & premium tiers (owner 2026-11-11). Plain script, no LLM.
+17 * * * * root /usr/bin/python3 /root/.hermes/shared-tools/admin/users_admin.py expire >> /root/.hermes/shared-tools/admin/expire.log 2>&1

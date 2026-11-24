@@ -1,0 +1,6 @@
+name: admin-panel
+version: 1.0.0
+description: "Owner admin panel (reply keyboard) + per-user shortcut keyboards for Agent Hermes. Admin buttons run scripts directly (no LLM). Shows only status/counts, never user content."
+author: "agenthermes session"
+provides_hooks:
+  - pre_gateway_dispatch
